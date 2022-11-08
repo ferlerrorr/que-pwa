@@ -60,7 +60,7 @@ $(document).ready(function () {
   rtrn();
   storeLoc();
   console.clear();
-  showDownloadPrompt();
+  foo();
 });
 /** ##Initial Load Function Executables*/
 
