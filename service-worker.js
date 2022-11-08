@@ -3,7 +3,7 @@ let cacheName = "SSDQue";//any unique name
 let filesToCache = [
   "/que-pwa/", // your repository name , both slash are important
   "service-worker.js",
-  "js/main.js",
+  "js/style.js",
   "js/install-handler.js",
   "js/settings.js",
   "css/main.css",
