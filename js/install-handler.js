@@ -8,26 +8,26 @@ window.addEventListener('beforeinstallprompt', function (event) {
 });
 
 
-document.querySelector('.downloadButton').addEventListener('click', downloadButtonClicked)
+// document.querySelector('.downloadButton').addEventListener('click', downloadButtonClicked)
 
-function downloadButtonClicked() {
-    deferredInstallPrompt.prompt();
-    deferredInstallPrompt.userChoice
-        .then(function (choiceResult) {
-            if (choiceResult.outcome === 'accepted') {
+// function downloadButtonClicked() {
+//     deferredInstallPrompt.prompt();
+//     deferredInstallPrompt.userChoice
+//         .then(function (choiceResult) {
+//             if (choiceResult.outcome === 'accepted') {
 
-                deferredInstallPrompt = null;
-                document.querySelector('.downloadPrompt').style.display = 'none';
+//                 deferredInstallPrompt = null;
+//                 document.querySelector('.downloadPrompt').style.display = 'none';
 
-            } else {
-                console.log(choiceResult)
-            }
-        })
-}
+//             } else {
+//                 console.log(choiceResult)
+//             }
+//         })
+// }
 
-function showDownloadPrompt() {
-    document.querySelector('.downloadPrompt').style.display = 'grid';
-}
+// function showDownloadPrompt() {
+//     document.querySelector('.downloadPrompt').style.display = 'grid';
+// }
 
 window.addEventListener('appinstalled', (evt) => {
     // Log install to analytics
