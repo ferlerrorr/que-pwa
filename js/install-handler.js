@@ -28,14 +28,23 @@ window.addEventListener('beforeinstallprompt', function (event) {
 //     document.querySelector('.downloadPrompt').style.display = 'grid';
 // }
 
-function askUserToInstallApp(){
-    if (!isInStandaloneMode()) {
-        alert('open in app');
-    }
-}
+// function askUserToInstallApp(){
+//     if (!isInStandaloneMode()) {
+//         alert('open in app');
+//     }
+// }
 
 
 window.addEventListener('appinstalled', (evt) => {
+    // Log install to analytics
+    
+    if (!isInStandaloneMode()) {
+        alert('open in app');
+    }
+});
+
+
+var askUserToInstallApp =  window.addEventListener('appinstalled', (evt) => {
     // Log install to analytics
     
     if (!isInStandaloneMode()) {
