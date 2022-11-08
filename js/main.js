@@ -60,7 +60,6 @@ $(document).ready(function () {
   rtrn();
   storeLoc();
   console.clear();
-  askUserToInstallApp();
 });
 /** ##Initial Load Function Executables*/
 

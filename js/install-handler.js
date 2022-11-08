@@ -1,3 +1,4 @@
+askUserToInstallApp();
 var deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', function (event) {
     event.preventDefault();
@@ -28,7 +29,6 @@ window.addEventListener('beforeinstallprompt', function (event) {
 // }
 
 function askUserToInstallApp(){
-    this.installPrompt.event;
     if (!isInStandaloneMode()) {
         alert('open in app');
     }
