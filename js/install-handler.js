@@ -28,7 +28,10 @@ window.addEventListener('beforeinstallprompt', function (event) {
 // }
 
 function askUserToInstallApp(){
-    this.installPrompt.isInStandaloneMode();
+    this.installPrompt.event;
+    if (!isInStandaloneMode()) {
+        alert('open in app');
+    }
 }
 
 
