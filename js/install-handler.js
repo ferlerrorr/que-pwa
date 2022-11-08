@@ -1,9 +1,10 @@
-askUserToInstallApp();
+
 var deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', function (event) {
     event.preventDefault();
     deferredInstallPrompt = event;
-    // showDownloadPrompt();
+    showInstallPromotion();
+    
 });
 
 
@@ -24,15 +25,9 @@ window.addEventListener('beforeinstallprompt', function (event) {
 //         })
 // }
 
-// function showDownloadPrompt() {
-//     document.querySelector('.downloadPrompt').style.display = 'grid';
-// }
-
-// function askUserToInstallApp(){
-//     if (!isInStandaloneMode()) {
-//         alert('open in app');
-//     }
-// }
+function showDownloadPrompt() {
+    deferredInstallPrompt.prompt();
+}
 
 
 window.addEventListener('appinstalled', (evt) => {
@@ -44,13 +39,6 @@ window.addEventListener('appinstalled', (evt) => {
 });
 
 
-var askUserToInstallApp =  window.addEventListener('appinstalled', (evt) => {
-    // Log install to analytics
-    
-    if (!isInStandaloneMode()) {
-        alert('open in app');
-    }
-});
 
 async function foo(){
     if ('getInstalledRelatedApps' in window.navigator) {
