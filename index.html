@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Open Github PWA is a template for building PWA with github pages">
+
+    <!--Social meta-->
+    <meta property="og:title" content="Open Github PWA" />
+    <meta property="og:url" content="" />
+    <meta property="og:description"
+        content="This is a PWA boilerplate, with cache busting mechanism and preconfigured Github Pages deployment" />
+    <meta property="og:image" content="/assets/icons/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#005dab">
+    <!---->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon.png">
+    <link rel="icon" type="image/png" href="assets/icons/icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <!---->
+    <!---->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portal.css">
+    <title>SSD Que</title>
+</head>
+<body>
+    <div id="appContainer" class="container">
+        <div class="body">
+            <div id="appContainer" class="container">
+    
+                <main class="container-full main" id="main iappContainer">
+        
+                    <div class="container col-header">
+                        <!--  -->
+                        <div class="container col-head">
+                            <h1 class="title" style="display: flex;">Southstar<div class="drg">drug</div>
+                            </h1>
+                            <span class="material-symbols-outlined strque-span " id="setbtn" style="flex: .5;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        padding-top: 3.5rem;
+                        padding-left: 1rem;
+                        margin-right: .10rem;
+                    ">
+                                <i class="material-icons strque-i" style="
+                            color: #fff;">settings</i>
+                            </span>
+                        </div>
+                        
+                        <!--  -->
+                    </div>
+            
+                    <div class="container col-box">
+            
+                        <div class="container col-box-row r1">
+            
+                            <div class="que-list-head">
+                                <!--  -->
+            
+                                <h4 class="row-box-title rbt1">Queue</h4>
+            
+                                <span class="material-symbols-outlined strque-span" id="strbtn">
+                                    <i class="material-icons strque-i">library_add</i>
+                                </span>
+                                <!--  -->
+                            </div>
+                            <div class="que-list-container">
+                                <!--  -->
+                                <ul class="que-list" id="qbody">
+                                    <!-- <li class="list-card">
+                                        <div class="qtitle-cont" >
+                                            <h5 class="qtitle">Trans # :</h5></div>
+                                        <div>
+                                            <h5 class="qnumber">${referencenumber}</h5>
+                                        </div>
+                                        <span class="material-icons">
+                                           <i class="material-icons mat-right">arrow_forward_ios</i>
+                                        </span>
+                                        </li>                     -->
+                                </ul>
+                                <!--  -->
+            
+                            </div>
+            
+                            <!--  -->
+                        </div>
+                        <div class="container col-box-row r2">
+                            <!--  -->
+                            <div class="que-serving-head">
+                                <!--  -->
+                                <h4 class="row-box-title rbt2">Serving</h4>
+                                <!--  -->
+                            </div>
+                            <div class="serving-row-container">
+                                <div class="serve-numb-con">
+                                    <ul class="serve-list" id="ubody">
+                                        <!-- <li> 
+                                            <div class="slist-card">
+                                                <span class="material-icons smat-back">
+                                                <i class="material-icons mat-left ">arrow_back_ios</i>
+                                                 </span>
+                                                <h3 class="stitle">Trans # :</h3>
+                                                <h3 class="snumber">${referencenumber}</h3>
+                                                <span class="material-icons">
+                                                <i class="material-icons mat-right">arrow_forward_ios</i>
+                                             </span>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+            
+                        <div class="container col-box-row r1">
+                            <div class="que-list-head">
+                                <!--  -->
+            
+                                <h4 class="row-box-title rbt1">Served</h4>
+                                <!--  -->
+                            </div>
+            
+                            <div class="que-list-container">
+                                <!--  -->
+                                <ul class="done-list" id="dbody">
+                                    <!-- <li class="list-card list-card-served">
+                                            <div class="qtitle-cont" >
+                                                <span class="material-icons">
+                                                    <i class="material-icons mat-left">arrow_back_ios</i>
+                                                 </span>
+                                                <h5 class="qtitle">Trans # :</h5></div>
+                                            <div>
+                                                <h5 class="qnumber">${referencenumber}</h5>
+                                            </div>
+                                            </li> -->
+                                </ul>
+                                <!--  -->
+                            </div>
+                        </div>
+                        <!--  -->
+            
+                    </div>
+                    <div class="container col-footer">
+                        <!--  -->
+                        <div class="container col-foot">
+                            <h5 class="afterwords">© 2022 Southstar Drug.</h5>
+                        </div>
+                        <!--  -->
+                    </div>
+            
+            
+                    <!-- Settings Modal  -->
+                    <div class="modal">
+                        <section class="modal-card">
+                            <header style="display:flex; align-content:center">
+                                <div class="mod-headr">
+                                    <h4 class="mod-ttl"> Settings</h4>
+                                    <button class="but-headr" type="button" id="modalCloseBtn">Close</button>
+                                </div>
+                            </header>
+                            <div class="inner">
+                                <label class="set-lbl" for="stores">Store :</label>
+                                <select class="store_at" id="stores" name="stores" onclick="strdd()">
+                                    <!--  -->
+                                    
+                                </select>
+                                <div id="version"></div>
+                            </div>
+                        </section>
+                        <div id="modalBg"></div>
+                    </div>
+                    <!-- Settings Modal  -->
+            
+            
+                    <!-- Store Modal  -->
+                    <div class="strmodal">
+                        <section class="strmodal-card">
+                            <header style="display:flex; align-content:center">
+                                <div class="strmod-headr">
+                                    <h4 class="mod-ttl">Create Queue</h4>
+                                    <button class="strbut-headr" type="button" id="strmodalCloseBtn">Close</button>
+                                </div>
+                            </header>
+                            <div class="inner">
+                                <form id="store_que">
+                                    <label class="strset-lbl" for="stores">Transaction Number :</label>
+                                    <input type="text" class="transaction_number" id="transaction_number" name="tnum"><br><br>
+                                    <input class="strbut-form" type="submit" value="Submit" onclick="storeQue()">
+                                </form>
+                                </select>
+                            </div>
+                        </section>
+                        <div id="strmodalBg"></div>
+                    </div>
+                    <!-- Store Modal  -->
+        
+        
+                    </main>
+            <div class="controllers">
+                <div class="downloadPrompt">
+                    <div class="promptControllers">
+                        <button class="downloadButton">Download </button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+            </footer>
+
+            <div class="hiddenElements">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bigFullScreen">
+
+    </div>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register(`service-worker.js`)
+                .then(function () {
+                    console.log("Service Worker Registered");
+                });
+        }
+    </script>
+    <script defer src="js/settings.js"></script>
+    <script defer src="js/install-handler.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
