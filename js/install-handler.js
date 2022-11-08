@@ -1,8 +1,7 @@
-// var deferredInstallPrompt = null;
+var deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', function (event) {
     event.preventDefault();
-    this.installPrompt.prompt();
-    // deferredInstallPrompt = event;
+    deferredInstallPrompt = event;
     // showDownloadPrompt();
 });
 
@@ -29,7 +28,7 @@ window.addEventListener('beforeinstallprompt', function (event) {
 // }
 
 function askUserToInstallApp(){
-    this.installPrompt.prompt();
+    this.installPrompt.isInStandaloneMode();
 }
 
 
