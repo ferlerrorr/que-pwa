@@ -1,9 +1,8 @@
-var deferredInstallPrompt = null;
-
-
+// var deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', function (event) {
     event.preventDefault();
-    deferredInstallPrompt = event;
+    this.installPrompt.prompt();
+    // deferredInstallPrompt = event;
     // showDownloadPrompt();
 });
 
@@ -28,6 +27,11 @@ window.addEventListener('beforeinstallprompt', function (event) {
 // function showDownloadPrompt() {
 //     document.querySelector('.downloadPrompt').style.display = 'grid';
 // }
+
+function askUserToInstallApp(){
+    this.installPrompt.prompt();
+}
+
 
 window.addEventListener('appinstalled', (evt) => {
     // Log install to analytics
