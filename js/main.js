@@ -60,6 +60,9 @@ $(document).ready(function () {
   rtrn();
   storeLoc();
   console.clear();
+  if (!isInStandaloneMode()) {
+    alert('open in app');
+}
 });
 /** ##Initial Load Function Executables*/
 
