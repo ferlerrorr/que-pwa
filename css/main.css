@@ -1082,4 +1082,9 @@
   grid-template-rows: auto 1fr auto;
 }
 
-
+.version{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: .5rem;
+}
