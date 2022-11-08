@@ -291,6 +291,7 @@ function nowServing(args) {
     xhr.send(data);
     console.clear();
   }
+  sleep(60);
   rtrntoserving();
 }
 /** ##App Queue Card list click event Script Handler*/
@@ -314,6 +315,7 @@ function deleteServing(args) {
     xhr.send(data);
     console.clear();
   }
+  sleep(60);
   rtrnbacktoqueue();
 }
 /** ##App Serving Card list click event Script Handler*/
@@ -337,6 +339,7 @@ function nowServed(args) {
     xhr.send(data);
     console.clear();
   }
+  sleep(60);
   rtrntoserved();
 }
 /** ##App Serving Card list click event Script Handler*/
@@ -360,6 +363,7 @@ function deleteServed(args) {
     xhr.send(data);
     console.clear();
   }
+  sleep(60);
   rtrnbacktoserving();
 }
 /** ##App Served Card list click event Script Handler*/
