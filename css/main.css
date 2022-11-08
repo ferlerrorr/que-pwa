@@ -1075,58 +1075,11 @@
     outline: none !important;
 }
 
-
-.downloadPrompt {
-  display: none;
-  padding: 10px;
-  box-shadow: 0px 0 7px 4px #00000030;
-  justify-content: center;
-  max-width: 300px;
-  margin: auto;
-  margin-top: 60px;
-}
-
-.downloadButton {
-  background: #109d58;
-  color: aliceblue;
-  padding: 5px 10px;
-  min-width: 100px;
-  border-radius: 2px;
-  border: 1px solid #00723b;
-  text-transform: uppercase;
-  /* box-shadow: -10px 6px 5px 1px #109d581a; */
-}
-
 #appContainer {
   overflow: hidden;
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
-.downloadPrompt {
-    display: none;
-    padding: 10px;
-    box-shadow: 0px 0 7px 4px #00000030;
-    justify-content: center;
-    max-width: 300px;
-    margin: auto;
-    margin-top: 60px;
-}
 
-.downloadButton {
-    background: #109d58;
-    color: aliceblue;
-    padding: 5px 10px;
-    min-width: 100px;
-    border-radius: 2px;
-    border: 1px solid #00723b;
-    text-transform: uppercase;
-    /* box-shadow: -10px 6px 5px 1px #109d581a; */
-}
 
-#appContainer {
-    overflow: hidden;
-    display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
