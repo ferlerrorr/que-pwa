@@ -3,31 +3,27 @@ var deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', function (event) {
     event.preventDefault();
     deferredInstallPrompt = event;
-    showInstallPromotion();
     
 });
 
 
 // document.querySelector('.downloadButton').addEventListener('click', downloadButtonClicked)
 
-// function downloadButtonClicked() {
-//     deferredInstallPrompt.prompt();
-//     deferredInstallPrompt.userChoice
-//         .then(function (choiceResult) {
-//             if (choiceResult.outcome === 'accepted') {
-
-//                 deferredInstallPrompt = null;
-//                 document.querySelector('.downloadPrompt').style.display = 'none';
-
-//             } else {
-//                 console.log(choiceResult)
-//             }
-//         })
-// }
-
-function showDownloadPrompt() {
+function showInstallPrompt() {
     deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice
+        .then(function (choiceResult) {
+            if (choiceResult.outcome === 'accepted') {
+
+                deferredInstallPrompt = null;
+                // document.querySelector('.downloadPrompt').style.display = 'none';
+
+            } else {
+                console.log(choiceResult)
+            }
+        })
 }
+
 
 
 window.addEventListener('appinstalled', (evt) => {
@@ -52,9 +48,7 @@ async function foo(){
 
 foo();
 
-
-
 const isInStandaloneMode = () =>(window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
 
-
+showInstallPrompt();
 
