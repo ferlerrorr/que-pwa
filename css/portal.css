@@ -359,7 +359,7 @@
 
 .smat-back {
   padding-right: 2rem;
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -652,4 +652,100 @@
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media only screen and (max-width: 575px) {
+ 
+  .slist-card{
+    height: 10vh;
+  }
+
+  .qtitle{
+    font-size: .35rem;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 775px) {
+ 
+  .col-box{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80vh;
+  }
+
+  .r1{
+    width: 99%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+   overflow: hidden; margin-bottom: 1rem !important;
+  }
+
+  .r2{
+    width: 99%;
+    margin-right: 2rem;
+    overflow: hidden;
+    margin-bottom: 1rem !important;
+  }
+
+  .que-list-head , .que-serving-head{
+    height: 15%;
+    text-align: center;
+
+  }
+
+  .quehead{
+    padding-left: 6.7rem !important;
+  }
+
+  .card-txt{
+    text-align: center;
+  }
+
+  .qnumb-cont{
+    width: 100%;
+  }
+
+  .qnumber{
+    flex-direction: column;
+    padding-left: 3.5rem;
+  }
+
+  .srvnum{
+    padding-left: 0 !important;
+    padding-right: 1.3rem;
+  }
+
+  .rbt1,.rbt2{
+    /* padding-left: 6.7rem; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .qt1{
+    padding-left: 4.2rem;
+    font-size: .75rem;
+    margin: 0;
+  }
+
+  .st{
+    padding-left: 0;
+    font-size: .7rem !important;
+    margin: 0;
+
+  }
+
+  .srv-ttltx{
+    padding-left: 0rem;
+    font-size: .75rem;
+    margin: 0;
+  }
+
+
+
 }

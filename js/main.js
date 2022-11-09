@@ -172,7 +172,7 @@ function queue() {
     td.innerHTML = `<div class="list-card" onclick="nowServing('${id}')">
 <div class="card-txt">
 <div class="qtitle-cont" >
-<h5 class="qtitle">Transaction Number :</h5></div>
+<h5 class="qtitle qt1">Transaction Number :</h5></div>
 <div class ="qnumb-cont">
 <h5 class="qnumber">${transaction_number}</h5>
 </div>
@@ -216,7 +216,7 @@ function serving() {
 <i class="material-icons mat-left ">arrow_back_ios</i>
 </span>        
 <div class="card-txt">
-<h4 class="stitle">Transaction Number :</h4>
+<h4 class="stitle st">Transaction Number :</h4>
 <h4 class="snumber">${transaction_number}</h4>
 </div>
 <span class="material-icons smat-forward" onclick="nowServed('${id}')">
