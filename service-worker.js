@@ -3,15 +3,15 @@ let cacheName = "SSDQue";//any unique name
 let filesToCache = [
   "/que-pwa/", // your repository name , both slash are important
   "service-worker.js",
-  "js/style.js",
+  "js/main.js",
   "js/install-handler.js",
   "js/settings.js",
-  "css/main.css",
+  "css/style.css",
   "css/portal.css",
   "assets/icons/icon.png",
   "manifest.json"
   // add your assets here 
-  // donot add config.json here
+  // do not add config.json here
 ];
 
 self.addEventListener("install", function (event) {
